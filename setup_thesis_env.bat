@@ -31,7 +31,7 @@ python -m pip install --upgrade pip
 echo ================================
 echo Installing core packages...
 echo ================================
-pip install torch transformers datasets matplotlib scikit-learn jupyterlab
+pip install torch transformers datasets matplotlib scikit-learn jupyterlab seaborn
 
 echo ================================
 echo Freezing environment to requirements.txt...
