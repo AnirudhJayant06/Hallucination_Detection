@@ -4,8 +4,8 @@ import pickle
 from collections import defaultdict
 
 # Define input/output folders
-raw_folder = "datasets/Wiki-Dump/raw"
-pkl_folder = "datasets/Wiki-Dump/pickle_file"
+raw_folder = r"E:\Users\Anirudh\Study\MS\Implementation\Thesis\datasets\Wiki-Dump\raw"
+pkl_folder = r"E:\Users\Anirudh\Study\MS\Implementation\Thesis\datasets\Wiki-Dump\pickle_file"
 
 # # Create output folder if it doesn't exist
 # os.makedirs(pkl_folder, exist_ok=True)
@@ -43,6 +43,6 @@ for filename in os.listdir(raw_folder):
         with open(output_file, "wb") as out_f:
             pickle.dump(dict(wiki_index), out_f)
 
-        print(f"✅ Converted: {filename} → {os.path.basename(output_file)}")
+        print(f"Converted: {filename} → {os.path.basename(output_file)}")
 
-print("🎉 All .jsonl files converted to .pkl successfully.")
+print("All .jsonl files converted to .pkl successfully.")
