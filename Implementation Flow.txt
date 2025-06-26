@@ -1,1 +1,5 @@
 1. Add all dataset to the project
+
+2. FEVER dataset
+    2.1 Get the page name from FEVER & sentence ID and store it in a dataframe
+    2.2 
